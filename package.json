@@ -9,12 +9,30 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.8"
+    "@ai-sdk/google": "^0.0.47",
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@google-cloud/language": "^6.5.0",
+    "@google/generative-ai": "^0.16.0",
+    "@mui/material": "^5.16.6",
+    "ai": "^3.3.4",
+    "aos": "^2.3.4",
+    "axios": "^1.7.3",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "dotenv": "^16.3.1",
+    "framer-motion": "^11.3.31",
+    "next": "^14.2.5",
+    "node-fetch": "^3.3.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "stream": "^0.0.3"
   },
   "devDependencies": {
-    "eslint": "^8",
-    "eslint-config-next": "14.2.8"
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.5"
   }
 }
