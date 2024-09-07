@@ -1,5 +1,16 @@
+// This API route handles the communication with the Gemini API
+// It receives a prompt from the client, sends it to the Gemini API, and returns the generated response
+// If the API call fails or the response is unexpected, it falls back to a basic response
+// Note: This file is a simplified version for demonstration purposes
+// It may require additional error handling, validation, or customization for production use
+// For more information, refer to the Gemini API documentation: https://api.openai.com/docs/gemini
+// Ensure the required environment variables are set in the .env.local file
+// The API key should be stored securely and not exposed in client-side code
+// For production use, consider implementing additional security measures and error handling
+
 import fetch from 'node-fetch'; // Ensure node-fetch is installed
 
+// This API route handles the communication with the Gemini API
 export default async function handler(req, res) {
 if (req.method === 'POST') {
     try {
@@ -27,6 +38,7 @@ if (req.method === 'POST') {
         }
         ]
     };
+    // Log the request body for debugging
     console.log('Request body:', requestBody);
 
     // Make the request to the Gemini API
@@ -83,3 +95,5 @@ if (prompt.toLowerCase().includes('help')) {
     return "I'm here to assist you with your needs. Could you please clarify your request?";
 }
 }
+
+// Note: This file can be improved with integration of ai-sdk
